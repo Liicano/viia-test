@@ -1,8 +1,6 @@
-// https://docs.cypress.io/api/introduction/api.html
-
-describe("My First Test", () => {
-  it("Visits the app root url", () => {
+describe("Entrar al root de la app", () => {
+  it("Visita la pagina Home, y chequea que las tablas se hayan cargado", () => {
     cy.visit("/");
-    cy.contains("h1", "Welcome to Your Vue.js + TypeScript App");
+    cy.get(".v-data-table.theme--light");
   });
 });
